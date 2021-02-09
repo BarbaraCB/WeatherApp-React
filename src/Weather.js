@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -53,6 +53,7 @@ const apiKey = "6219babb9cc5da1963f69851e5943f67";
             </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast city={weatherData.city} />
         
     </div>
   );
